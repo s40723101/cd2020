@@ -1,6 +1,5 @@
 # cd2020
 
-40723101
 
 個人網站:https://s40723101.github.io/cd2020/content/index.html
 
