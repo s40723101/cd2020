@@ -210,7 +210,85 @@
 <p><img alt="" height="290" src="/images/chrome_nQsqCgjORu.png" width="477"/></p>
 <p><img alt="" height="243" src="/images/ShareX_g08pdFJGId.png" width="511"/></p>
 <p></p><h2>week14</h2>
-<h2>week15</h2>
+<h4></h4>
+<p>VirtualBox</p>
+<p>Setting VirtualBox Network</p>
+<ul>
+<li><span>在VirtualBox→Files→Preferences</span><span>→Network<br/>新增一個網路設定，支援DHCP和IPV6</span></li>
+<li>
+<p>再到cd2020pj1的虛擬主機設定NAT的Port號</p>
+<p>IPv4設定：Guest IP是透過ifconfig查出來(IPv6的也是)</p>
+</li>
+<li>
+<p><span>IP 查詢</span></p>
+<strong><em>ifconfig</em></strong></li>
+<li>
+<p>如果跳出尚未安裝net-tools的話請安裝<br/><span></span></p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_731886"></div>
+</div>
+<strong><em>sudo apt install net-tools</em></strong></li>
+<li>
+<p>如果在<strong>IPv6</strong>環境下有跳出網路錯誤</p>
+<span>1.IPv6環境設定是否正確</span><br/><br/><span>到/etc/netplan 目錄下檢查 00-installer-config.yaml 檔案內的設定</span><span></span>
+<div class="line number1 index0 alt2"><code class="html plain"></code></div>
+<div class="line number1 index0 alt2"><code class="html plain"></code></div>
+<em><code class="html plain"></code></em>
+<div class="line number1 index0 alt2"><strong><em><code class="html plain">1.cd /etc/netplan</code></em></strong></div>
+<div class="line number2 index1 alt1"><strong><em><code class="html plain">2.sudo vi 00-installer-config.yaml</code></em></strong></div>
+<strong><em><code class="html plain"><span></span></code></em></strong></li>
+<li><strong><code class="html plain">  00-installer-config.yaml(<span style="color: #ff0000;">按照格式打<span style="color: #ff0000;"></span></span>)</code></strong><strong><code class="html plain"></code></strong></li>
+</ul>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain"># This is the network config written by 'subiquity'</code></div>
+<div class="line number2 index1 alt1"><code class="html plain">network:</code></div>
+<div class="line number3 index2 alt2"><code class="html spaces">    </code><code class="html plain">ethernets:</code></div>
+<div class="line number4 index3 alt1"><code class="html spaces">        </code><code class="html plain">enpes3:</code></div>
+<div class="line number5 index4 alt2"><code class="html spaces">            </code><code class="html plain">dhcp4: true</code></div>
+<div class="line number6 index5 alt1"><code class="html spaces">            </code><code class="html plain">dhcp6: true</code></div>
+<div class="line number7 index6 alt2"><code class="html spaces">            </code><code class="html plain">nameservers:</code></div>
+<div class="line number8 index7 alt1"><code class="html spaces">                </code><code class="html plain">addresses:</code></div>
+<div class="line number9 index8 alt2"><code class="html spaces">                    </code><code class="html plain">- 2001:b000:168::1</code></div>
+<div class="line number10 index9 alt1"><code class="html spaces">    </code><code class="html plain">version: 2</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="line number1 index0 alt2"></div>
+<ul>
+<li class="line number1 index0 alt2"><code class="html plain"><span>編輯完成後:wq跳出編輯並儲存，更新netplan設定</span></code>
+<p><strong><em>sudo netplan apply</em></strong></p>
+</li>
+<li class="line number1 index0 alt2"><code class="html plain"><span>proxy問題<br/><span>到 /etc/apt/apt.conf.d 目錄下檢查是否有proxy.conf檔案，若沒有，請用新增</span></span></code><code class="html plain"><span><span></span></span></code><strong><em><code class="html plain">cd /etc/apt/apt.conf.d<br/>sudo vi proxy.conf</code></em></strong></li>
+<li class="line number1 index0 alt2"><code class="html plain"><span><span>proxy.conf檔案的內容</span></span></code>
+<p><strong><em><code class="html plain">Acquire::http::proxy "http://[2001:288:6004:17::填port號]:3128";</code></em></strong></p>
+</li>
+<li class="line number1 index0 alt2"><code class="html plain"><span>更新apt</span></code><code class="html plain"><span></span></code><strong><em><code class="html plain">sudo apt update</code></em></strong></li>
+<li class="line number1 index0 alt2"><span face="monospace" style="font-family: monospace;">完成即可啟動wsgi.py</span><span face="monospace" style="font-family: monospace;"></span></li>
+</ul>
+<p><span face="monospace" style="font-family: monospace;"><img caption="false" height="433" src="/images/VirtualBox_a7B2Zpp8kf.png" width="800"/></span></p>
+<p></p>
+<p></p>
+<p><code class="html plain"><span><span></span></span></code></p>
+<p><code class="html plain"><span><span><img alt="" height="460" src="/images/VirtualBox_N5MVqLJcYc.png" width="800"/></span></span></code></p>
+<p><code class="html plain"><span><span><img alt="" height="583" src="/images/VirtualBox_sETJeEcnIa.png" width="800"/></span></span></code></p><h2>week15</h2>
 <p></p>
 <p><a href="https://cad.onshape.com/documents/2a8af474aed59e5bbcbf1b1f/w/f0d19f1e8ffa93a4264570c7/e/07173d946d2931bcd87d6ab2">https://cad.onshape.com/documents/2a8af474aed59e5bbcbf1b1f/w/f0d19f1e8ffa93a4264570c7/e/07173d946d2931bcd87d6ab2</a></p>
 <p></p>
