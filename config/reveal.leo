@@ -61,6 +61,32 @@
 <v t="leo.20200624111239.1"><vh>WEEK16</vh>
 <v t="leo.20200624111239.2"><vh>封面投影片內容</vh></v>
 </v>
+<v t="leo.20200624112816.1"><vh>各式內容引用範例</vh>
+<v t="leo.20200624112816.2"><vh>導入數學符號與方程式</vh>
+<v t="leo.20200624112816.3"><vh>LaTeX 格式方程式</vh></v>
+</v>
+<v t="leo.20200624112816.4"><vh>導入縮排程式碼</vh>
+<v t="leo.20200624112816.5"><vh>引用程式碼</vh></v>
+</v>
+<v t="leo.20200624112816.6"><vh>導入影片</vh>
+<v t="leo.20200624112816.7"><vh>iframe 導入影片</vh></v>
+</v>
+<v t="leo.20200624113244.1"><vh>導入影片</vh>
+<v t="leo.20200624113244.2"><vh>iframe 導入影片</vh></v>
+</v>
+<v t="leo.20200624113347.1"><vh>導入影片</vh>
+<v t="leo.20200624113347.2"><vh>iframe 導入影片</vh></v>
+</v>
+<v t="leo.20200624113422.1"><vh>導入影片</vh>
+<v t="leo.20200624113422.2"><vh>iframe 導入影片</vh></v>
+</v>
+<v t="leo.20200624113735.1"><vh>導入影片</vh>
+<v t="leo.20200624113735.2"><vh>iframe 導入影片</vh></v>
+</v>
+</v>
+<v t="leo.20200624113828.1"><vh>封面投影片</vh>
+<v t="leo.20200624113828.2"><vh>封面投影片內容</vh></v>
+</v>
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
 </v>
@@ -590,6 +616,118 @@ group 4:40723138
 <t tx="leo.20200624111239.2">## WEEK16
 [底層網址](https://cad.onshape.com/documents/3203ae52dd430e12eedfe990/w/0351bd139b4c881c6bfbf1ae/e/f4b3ee5171c495a24d35a019)
 &lt;iframe src="https://s40723101.github.io/cd2020/content/week16.html" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20200624112816.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx="leo.20200624112816.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200624112816.3"># 直播影片
+
+</t>
+<t tx="leo.20200624112816.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200624112816.5">## w2
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/e89PLiLRle8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+</t>
+<t tx="leo.20200624112816.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200624112816.7">## w5
+
+&lt;iframe width="556" height="310" src="https://www.youtube.com/embed/-MoaduLrKiI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20200624113244.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200624113244.2">## w7
+
+&lt;iframe width="556" height="310" src="https://www.youtube.com/embed/ihUp_mp5FRY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20200624113347.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200624113347.2">## w8
+
+&lt;iframe width="556" height="310" src="https://www.youtube.com/embed/OSKbrzVS9cs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200624113422.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200624113422.2">## w10
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/qvnw7KaMm_8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200624113735.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200624113735.2">## w15
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/xFM1NzUYCZA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200624113828.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200624113828.2">## end
+
+
+
+
 </t>
 </tnodes>
 </leo_file>
